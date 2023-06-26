@@ -21,7 +21,7 @@ public class TestBase {
 
     @AfterClass
     public static void teardown(){
-        driver.close();
+        //driver.close();
     }
     public void sleep(int seconds){
         try {

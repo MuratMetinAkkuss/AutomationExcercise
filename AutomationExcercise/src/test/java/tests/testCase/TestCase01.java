@@ -1,10 +1,9 @@
-package tests.testCase1;
+package tests.testCase;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import utilities.TestBase;
@@ -37,7 +36,7 @@ public class TestCase01 extends TestBase{
         nameElement.sendKeys("Murat metin");
 
         WebElement lastNameElement = driver.findElement(By.xpath("(//input[@placeholder='Email Address'])[2]"));
-        lastNameElement.sendKeys("muratmetinakkuss@gmail.com");
+        lastNameElement.sendKeys("muratmetinakkus@gmail.com");
 
         //7. Click 'Signup' button
 
@@ -51,7 +50,7 @@ public class TestCase01 extends TestBase{
         //9. Fill details: Title, Name, Email, Password, Date of birth
 
         WebElement passWordElement = driver.findElement(By.id("password"));
-        passWordElement.sendKeys("Met123764.,"+ Keys.PAGE_DOWN);
+        passWordElement.sendKeys("123yyyyaaaa"+ Keys.PAGE_DOWN);
 
         WebElement daysForBirthElement = driver.findElement(By.id("days"));
         Select selectDay = new Select(daysForBirthElement);
