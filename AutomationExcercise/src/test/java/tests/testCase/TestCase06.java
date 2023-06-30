@@ -34,8 +34,8 @@ public class TestCase06 extends TestBase {
         WebElement messageElement = driver.findElement(By.xpath("//textarea[@data-qa='message']"));
         messageElement.sendKeys("Text");
         //7. Upload file
-        WebElement uploadFile = driver.findElement(By.xpath("//input[@name='upload_file']"));
-        
+        //driver.findElement(By.xpath("//input[@name='upload_file']"));
+        //driver.switchTo().activeElement().sendKeys("tests/img/phototestcase06.jpg");
         //8. Click 'Submit' button
         //9. Click OK button
         //10. Verify success message 'Success! Your details have been submitted successfully.' is visible
