@@ -158,17 +158,17 @@ public class TestCase23 extends TestBase {
 
         //13. Verify that the billing address is same address filled at the time registration of account
         WebElement billName = driver.findElement(By.xpath("(//*[@class='address_firstname address_lastname'])[1]"));
-        Assert.assertTrue(deliveryName.getText().contains(name)&&deliveryName.getText().contains(lastName));
+        Assert.assertTrue(billName.getText().contains(name)&&deliveryName.getText().contains(lastName));
         WebElement BillCompanyAdress = driver.findElement(By.xpath("(//*[@class='address_address1 address_address2'])[1]"));
-        Assert.assertTrue(companyAdress.getText().contains(companyName));
+        Assert.assertTrue(BillCompanyAdress.getText().contains(companyName));
         WebElement billAdress1 = driver.findElement(By.xpath("(//*[@class='address_address1 address_address2'])[2]"));
-        Assert.assertTrue(adress1.getText().contains(adress));
+        Assert.assertTrue(billAdress1.getText().contains(adress));
         WebElement billAdress2 = driver.findElement(By.xpath("(//*[@class='address_address1 address_address2'])[3]"));
-        Assert.assertTrue(adress2.getText().contains(secondAdress));
+        Assert.assertTrue(billAdress2.getText().contains(secondAdress));
         WebElement billStateCityZipCode = driver.findElement(By.xpath("(//*[@class='address_city address_state_name address_postcode'])[1]"));
-        Assert.assertTrue(stateCityZipCode.getText().contains(state)&&stateCityZipCode.getText().contains(city)&&stateCityZipCode.getText().contains(zipCode));
+        Assert.assertTrue(billStateCityZipCode.getText().contains(state)&&stateCityZipCode.getText().contains(city)&&stateCityZipCode.getText().contains(zipCode));
         WebElement Billphone = driver.findElement(By.xpath("(//*[@class='address_phone'])[1]"));
-        Assert.assertTrue(phone.getText().contains(phoneNumber));
+        Assert.assertTrue(Billphone.getText().contains(phoneNumber));
         //14. Click 'Delete Account' button
         driver.findElement(By.xpath("//*[@href='/delete_account']")).click();
         //15. Verify 'ACCOUNT DELETED!' and click 'Continue' button
