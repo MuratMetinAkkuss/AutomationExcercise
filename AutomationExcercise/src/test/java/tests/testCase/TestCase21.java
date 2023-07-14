@@ -34,6 +34,6 @@ public class TestCase21 extends TestBase {
         driver.findElement(By.xpath("//*[@id='button-review']")).click();
         //9. Verify success message 'Thank you for your review.'
         Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Thank you for your review.']")).isDisplayed());
-    
+
     }
 }
