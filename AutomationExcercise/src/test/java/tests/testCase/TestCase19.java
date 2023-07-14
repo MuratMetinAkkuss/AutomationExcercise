@@ -21,7 +21,6 @@ public class TestCase19 extends TestBase {
         //3. Click on 'Products' button
         driver.findElement(By.xpath("//*[@href='/products']")).click();
         //4. Verify that Brands are visible on left side bar
-
         Assert.assertTrue(driver.findElement(By.xpath("//*[@class='brands_products']")).isDisplayed());
         //5. Click on any brand name
         Thread.sleep(4000);// i put here because of google ads in automation page is preventing test
