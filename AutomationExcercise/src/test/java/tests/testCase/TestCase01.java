@@ -35,8 +35,8 @@ public class TestCase01 extends TestBase{
         WebElement nameElement = driver.findElement(By.xpath("//input[@placeholder='Name']"));
         nameElement.sendKeys("Murat metin");
 
-        WebElement lastNameElement = driver.findElement(By.xpath("(//input[@placeholder='Email Address'])[2]"));
-        lastNameElement.sendKeys("muratmetinakkusssss@gmail.com");
+        WebElement eMailElement = driver.findElement(By.xpath("(//input[@placeholder='Email Address'])[2]"));
+        eMailElement.sendKeys("muratmetinakkusssss@gmail.com");
 
         //7. Click 'Signup' button
 
